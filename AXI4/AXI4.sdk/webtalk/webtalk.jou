@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Wed Sep 27 12:31:33 2017
+# Process ID: 1912
+# Current directory: C:/EE_Classes/EE324_Projects/AXI4/AXI4.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/EE_Classes/EE324_Projects/AXI4/AXI4.sdk/webtalk/webtalk.log
+# Journal file: C:/EE_Classes/EE324_Projects/AXI4/AXI4.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

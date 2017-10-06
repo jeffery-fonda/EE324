@@ -1,0 +1,160 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 15 09:24:46 2017
+# Process ID: 2308
+# Current directory: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2408 C:\Users\Jeffery Fonda\Dropbox\Classes\EE Classes\EE324 Projects\Stopwatch\Project 1\project_3\project_3.xpr
+# Log file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/vivado.log
+# Journal file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3'
+INFO: [Project 1-313] Project file moved from 'C:/Users/fer/Desktop/EE214/214/project_3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 15 09:25:26 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.runs/synth_1/runme.log
+[Fri Sep 15 09:25:26 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/.Xil/Vivado-2308-WIN-TVTUV8P1OGM/dcp1/stopwatch_top.xdc]
+Finished Parsing XDC File [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/.Xil/Vivado-2308-WIN-TVTUV8P1OGM/dcp1/stopwatch_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 988.945 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 988.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1076.754 ; gain = 300.625
+create_bd_design "design_1"
+Wrote  : <C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.227 ; gain = 44.195
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}]
+Wrote  : <C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd> 
+Verilog Output written to : C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+export_ip_user_files -of_objects [get_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}]
+export_simulation -of_objects [get_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -directory {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.ip_user_files} -ipstatic_source_dir {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.cache/compile_simlib/modelsim} {questa=C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.cache/compile_simlib/questa} {riviera=C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.cache/compile_simlib/riviera} {activehdl=C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: stopwatch_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1618.813 ; gain = 72.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'stopwatch_top' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:22]
+INFO: [Synth 8-638] synthesizing module 'sev_seg_display' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/sev_seg_display.v:21]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sev_seg_display' (1#1) [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/sev_seg_display.v:21]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:73]
+INFO: [Synth 8-638] synthesizing module 'clkDvr' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/clkDvr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clkDvr' (2#1) [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/clkDvr.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/counter.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'd0' does not match port width (1) of module 'counter' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:85]
+WARNING: [Synth 8-689] width (4) of port connection 'd1' does not match port width (1) of module 'counter' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:86]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/controller.v:22]
+	Parameter idle bound to: 2'b00 
+	Parameter incrementing bound to: 2'b01 
+	Parameter timeStart bound to: 2'b10 
+	Parameter done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/controller.v:120]
+WARNING: [Synth 8-6014] Unused sequential element currentCount_reg was removed.  [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/controller.v:59]
+WARNING: [Synth 8-6014] Unused sequential element nextCount_reg was removed.  [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/controller.v:73]
+INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/controller.v:22]
+WARNING: [Synth 8-3848] Net click in module/entity stopwatch_top does not have driver. [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:37]
+INFO: [Synth 8-256] done synthesizing module 'stopwatch_top' (5#1) [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:22]
+WARNING: [Synth 8-3331] design counter has unconnected port d0
+WARNING: [Synth 8-3331] design counter has unconnected port d1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1646.867 ; gain = 100.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ClockDivider:click to constant 0 [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:73]
+WARNING: [Synth 8-3295] tying undriven pin Counter:click to constant 0 [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/sources_1/new/stopwatch.v:80]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1646.867 ; gain = 100.832
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/constrs_1/new/basys.xdc]
+Finished Parsing XDC File [C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.srcs/constrs_1/new/basys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1786.766 ; gain = 240.730
+14 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1786.766 ; gain = 240.730
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714941A
+set_property PROGRAM.FILE {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.runs/impl_1/stopwatch_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Project 1/project_3/project_3.runs/impl_1/stopwatch_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714941A
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 09:31:21 2017...

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 15 14:00:52 2017
+# Process ID: 2500
+# Current directory: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent364 C:\Users\Jeffery Fonda\Dropbox\Classes\EE Classes\EE324 Projects\Stopwatch\stopwatch.xpr
+# Log file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/vivado.log
+# Journal file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/clkDvr.v', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/new/clkDvr.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/controller.v', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/new/controller.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/counter.v', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/new/counter.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/sev_seg_display.v', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/new/sev_seg_display.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/stopwatch.v', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/new/stopwatch.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/bd/design_1/design_1.bd', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/sources_1/bd/design_1/design_1.bd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/constrs_1/new/basys.xdc', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.srcs/constrs_1/new/basys.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.ip_user_files', nor could it be found using path 'C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/Stopwatch/project_3.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 14:01:47 2017...

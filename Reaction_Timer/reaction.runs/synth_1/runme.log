@@ -1,0 +1,384 @@
+
+*** Running vivado
+    with args -log reaction.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source reaction.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source reaction.tcl -notrace
+Command: synth_design -top reaction -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3060 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 307.520 ; gain = 76.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'reaction' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:21]
+INFO: [Synth 8-638] synthesizing module 'sevseg' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/sev_seg_display.v:21]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sevseg' (1#1) [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/sev_seg_display.v:21]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:112]
+INFO: [Synth 8-638] synthesizing module 'clkDvr' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/clkDvr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clkDvr' (2#1) [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/clkDvr.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module '_controller' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:23]
+	Parameter idle bound to: 2'b00 
+	Parameter starting bound to: 2'b01 
+	Parameter started bound to: 2'b10 
+	Parameter done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:155]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:177]
+WARNING: [Synth 8-6014] Unused sequential element temp1_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:178]
+WARNING: [Synth 8-6014] Unused sequential element temp2_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:179]
+WARNING: [Synth 8-6014] Unused sequential element temp3_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:180]
+WARNING: [Synth 8-6014] Unused sequential element shifter_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:67]
+WARNING: [Synth 8-3848] Net tempBin in module/entity _controller does not have driver. [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:45]
+INFO: [Synth 8-256] done synthesizing module '_controller' (4#1) [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:23]
+WARNING: [Synth 8-6014] Unused sequential element shiftCount_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:64]
+WARNING: [Synth 8-6014] Unused sequential element shiftCount2_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:76]
+WARNING: [Synth 8-3848] Net led1 in module/entity reaction does not have driver. [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:27]
+WARNING: [Synth 8-3848] Net click in module/entity reaction does not have driver. [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:40]
+INFO: [Synth 8-256] done synthesizing module 'reaction' (5#1) [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:21]
+WARNING: [Synth 8-3331] design counter has unconnected port dig0[3]
+WARNING: [Synth 8-3331] design counter has unconnected port dig0[2]
+WARNING: [Synth 8-3331] design counter has unconnected port dig0[1]
+WARNING: [Synth 8-3331] design counter has unconnected port dig0[0]
+WARNING: [Synth 8-3331] design counter has unconnected port dig1[3]
+WARNING: [Synth 8-3331] design counter has unconnected port dig1[2]
+WARNING: [Synth 8-3331] design counter has unconnected port dig1[1]
+WARNING: [Synth 8-3331] design counter has unconnected port dig1[0]
+WARNING: [Synth 8-3331] design reaction has unconnected port led1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 346.844 ; gain = 115.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ClockDivider:click to constant 0 [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:112]
+WARNING: [Synth 8-3295] tying undriven pin Counter:click to constant 0 [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/reaction.v:119]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 346.844 ; gain = 115.809
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/constrs_1/new/basys.xdc]
+Finished Parsing XDC File [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/constrs_1/new/basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/constrs_1/new/basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/reaction_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/reaction_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 650.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 650.559 ; gain = 419.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.559 ; gain = 419.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.559 ; gain = 419.523
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/sev_seg_display.v:46]
+INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "counter1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "stateNext" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "countNext" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'binary_reg' [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/_controller.v:183]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.559 ; gain = 419.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 38    
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               29 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     29 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 30    
+	   4 Input      2 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reaction 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module sevseg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module clkDvr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module _controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 34    
++---Registers : 
+	               29 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     29 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 26    
+	   4 Input      4 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "ClockDivider/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ClockDivider/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element C1/count_reg was removed.  [C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.srcs/sources_1/new/sev_seg_display.v:46]
+WARNING: [Synth 8-3331] design reaction has unconnected port led1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 650.559 ; gain = 419.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 699.164 ; gain = 468.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    33|
+|3     |LUT1   |    96|
+|4     |LUT2   |    41|
+|5     |LUT3   |    39|
+|6     |LUT4   |    40|
+|7     |LUT5   |    35|
+|8     |LUT6   |    74|
+|9     |FDCE   |   111|
+|10    |FDPE   |     4|
+|11    |FDRE   |     6|
+|12    |LD     |    14|
+|13    |IBUF   |     5|
+|14    |OBUF   |    13|
+|15    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+------------+------+
+|      |Instance       |Module      |Cells |
++------+---------------+------------+------+
+|1     |top            |            |   514|
+|2     |  C1           |sevseg      |    45|
+|3     |  ClockDivider |clkDvr      |    71|
+|4     |  Controller   |_controller |   260|
+|5     |  Counter      |counter     |    68|
++------+---------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 918.285 ; gain = 383.535
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 918.285 ; gain = 687.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
+
+32 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 918.285 ; gain = 695.016
+INFO: [Common 17-1381] The checkpoint 'C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/synth_1/reaction.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 918.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 22 18:45:58 2017...

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Sep 20 18:12:29 2017
+# Process ID: 5472
+# Current directory: C:/EE_Classes/EE324_Projects/Stopwatch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4380 C:\EE_Classes\EE324_Projects\Stopwatch\stopwatch.xpr
+# Log file: C:/EE_Classes/EE324_Projects/Stopwatch/vivado.log
+# Journal file: C:/EE_Classes/EE324_Projects/Stopwatch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/EE_Classes/EE324_Projects/Stopwatch/stopwatch.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/EE_Classes/EE324_Projects/Stopwatch/stopwatch.runs/impl_1/stopwatch_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/EE_Classes/EE324_Projects/Stopwatch/stopwatch.runs/impl_1/stopwatch_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 15 14:03:33 2017
+# Process ID: 6800
+# Current directory: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4500 C:\Users\Jeffery Fonda\Dropbox\Classes\EE Classes\EE324 Projects\Stopwatch\stopwatch.xpr
+# Log file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/vivado.log
+# Journal file: C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/clk_div.v}} -to_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/clkDvr.v}} -filesets [get_filesets *]
+update_files -from_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/Stopwatch_top.v}} -to_files {{C:/Users/Jeffery Fonda/Dropbox/Classes/EE Classes/EE324 Projects/Stopwatch/stopwatch.srcs/sources_1/new/stopwatch.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

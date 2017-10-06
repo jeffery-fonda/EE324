@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 22 18:25:37 2017
+# Process ID: 984
+# Current directory: C:/EE_Classes/EE324_Projects/Extracted/reaction
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1788 C:\EE_Classes\EE324_Projects\Extracted\reaction\reaction.xpr
+# Log file: C:/EE_Classes/EE324_Projects/Extracted/reaction/vivado.log
+# Journal file: C:/EE_Classes/EE324_Projects/Extracted/reaction\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/EE_Classes/EE324_Projects/Extracted/reaction/reaction.xpr
+update_compile_order -fileset sources_1

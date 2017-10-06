@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep 18 14:26:50 2017
+# Process ID: 8952
+# Current directory: C:/Users/fer/Desktop/EE214/214/reaction
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1012 C:\Users\fer\Desktop\EE214\214\reaction\reaction.xpr
+# Log file: C:/Users/fer/Desktop/EE214/214/reaction/vivado.log
+# Journal file: C:/Users/fer/Desktop/EE214/214/reaction\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fer/Desktop/EE214/214/reaction/reaction.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Sep 18 14:29:09 2017] Launched synth_1...
+Run output will be captured here: C:/Users/fer/Desktop/EE214/214/reaction/reaction.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Sep 18 14:30:02 2017] Launched impl_1...
+Run output will be captured here: C:/Users/fer/Desktop/EE214/214/reaction/reaction.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/fer/Desktop/EE214/214/reaction/.Xil/Vivado-8952-WINDOWS-V42TLFG/dcp5/reaction.xdc]
+Finished Parsing XDC File [C:/Users/fer/Desktop/EE214/214/reaction/.Xil/Vivado-8952-WINDOWS-V42TLFG/dcp5/reaction.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1026.313 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1026.313 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1131.527 ; gain = 302.336
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Mon Sep 18 14:37:18 2017] Launched impl_1...
+Run output will be captured here: C:/Users/fer/Desktop/EE214/214/reaction/reaction.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/fer/Desktop/EE214/214/reaction/.Xil/Vivado-8952-WINDOWS-V42TLFG/dcp11/reaction.xdc]
+Finished Parsing XDC File [C:/Users/fer/Desktop/EE214/214/reaction/.Xil/Vivado-8952-WINDOWS-V42TLFG/dcp11/reaction.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1544.273 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1544.273 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Sep 20 16:19:04 2017] Launched synth_1...
+Run output will be captured here: C:/Users/fer/Desktop/EE214/214/reaction/reaction.runs/synth_1/runme.log

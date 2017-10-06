@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1506131096">
+  <File Type="RDS-PROPCONSTRS" Name="reaction_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="reaction.tcl"/>
+  <File Type="RDS-RDS" Name="reaction.vds"/>
+  <File Type="RDS-UTIL" Name="reaction_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="reaction_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="reaction.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="reaction_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="reaction_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clkDvr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_3/project_3.srcs/sources_1/new/clkDvr.v"/>
+        <Attr Name="ImportTime" Val="1505473434"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_3/project_3.srcs/sources_1/new/counter.v"/>
+        <Attr Name="ImportTime" Val="1505473837"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sev_seg_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_2/project_2.srcs/sources_1/new/sev_seg_display.v"/>
+        <Attr Name="ImportTime" Val="1505449708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reaction.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/binary2BCD.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="reaction"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_2/project_2.srcs/constrs_1/new/basys.xdc"/>
+        <Attr Name="ImportTime" Val="1505447316"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

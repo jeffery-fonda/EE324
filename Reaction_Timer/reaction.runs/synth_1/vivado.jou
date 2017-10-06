@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 22 18:44:58 2017
+# Process ID: 1676
+# Current directory: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/synth_1
+# Command line: vivado.exe -log reaction.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source reaction.tcl
+# Log file: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/synth_1/reaction.vds
+# Journal file: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source reaction.tcl -notrace

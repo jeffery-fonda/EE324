@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 22 18:26:43 2017
+# Process ID: 7944
+# Current directory: C:/EE_Classes/EE324_Projects/Reaction_Timer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4848 C:\EE_Classes\EE324_Projects\Reaction_Timer\reaction.xpr
+# Log file: C:/EE_Classes/EE324_Projects/Reaction_Timer/vivado.log
+# Journal file: C:/EE_Classes/EE324_Projects/Reaction_Timer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/fer/Desktop/EE214/214/reaction' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 22 18:36:57 2017] Launched impl_1...
+Run output will be captured here: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 22 18:44:57 2017] Launched synth_1...
+Run output will be captured here: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/synth_1/runme.log
+[Fri Sep 22 18:44:57 2017] Launched impl_1...
+Run output will be captured here: C:/EE_Classes/EE324_Projects/Reaction_Timer/reaction.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/EE_Classes/EE324_Projects/Reaction_Timer/.Xil/Vivado-7944-WIN-TVTUV8P1OGM/dcp5/reaction.xdc]
+Finished Parsing XDC File [C:/EE_Classes/EE324_Projects/Reaction_Timer/.Xil/Vivado-7944-WIN-TVTUV8P1OGM/dcp5/reaction.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 986.500 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 986.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.879 ; gain = 275.148
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 22 19:12:02 2017...
