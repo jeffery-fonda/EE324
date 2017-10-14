@@ -171,36 +171,18 @@ task axi_read;
     // 'addr': 32-bit address (first parameter)
     input [31:0] addr;
     begin
-        // Prepare address value on ARADDR bus
-        // Wait until read addressis accepted by the peripheral
-        // Wait until peripheral replies with data on Read Data Channel
-        @ (posedge s_axi_aclk)
-        #1 s_axi_rdata = data;
-        s_axi_rvalid = 1'b1;
-        
-        @ (posedge s_axi_aclk)
+        // Prepare address value on ADDR bus
+        @ (posedge s_axi_aclk);
         #1 s_axi_araddr = addr;
         s_axi_arvalid = 1'b1;
-        
-        while(s_axi_rvalid == 1'b1 || s_axi_araddr == 1'b1)
+        // Wait until read address is accepted by the peripheral
+        while (s_axi_arvalid == 1'b1)
         begin
-            @ (posedge s_axiaclk);
-            if (s_axi_rready == 1'b1 && s_axi_arready == 1'b1)
-            begin
-                #1 s_axi_rvalid = 1'b0;
-                s_axi_arvalid = 1'b0;
-            end
-            else if (s_axi_rready == 1'b1)
-            begin
-                #1 s_axi_rvalid = 1'b1;
-            end
-            else if (s_axi_arready == 1'b1)
-            begin
+            @ (posedge s_axi_aclk);
+            if (s_axi_arready == 1'b1)
                 #1 s_axi_arvalid = 1'b0;
-            end
         end
-        
-        while (s_axi_bvalid == 1'b0);
+        // Wait until peripheral replies with data on Read
     end
 endtask
 
