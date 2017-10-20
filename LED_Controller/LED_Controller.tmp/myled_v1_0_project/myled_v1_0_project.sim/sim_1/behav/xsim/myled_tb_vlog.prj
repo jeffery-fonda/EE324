@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../Resources/IP_Repo/myled_1.0/hdl/myled_v1_0.v" \
+"../../../../../../../Resources/IP_Repo/myled_1.0/hdl/myled_v1_0_S_AXI.v" \
+"../../../../../../../Resources/IP_Repo/myled_1.0/hdl/myled_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

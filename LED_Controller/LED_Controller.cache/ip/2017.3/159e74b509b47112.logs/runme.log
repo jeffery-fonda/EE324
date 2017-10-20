@@ -1,0 +1,109 @@
+
+*** Running vivado
+    with args -log system_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_auto_pc_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_auto_pc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1269.746 ; gain = 83.996 ; free physical = 409 ; free virtual = 5302
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_0/synth/system_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_axi_protocol_converter' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_aw_channel' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_cmd_translator' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_incr_cmd' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_incr_cmd' (1#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_wrap_cmd' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_wrap_cmd' (2#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_cmd_translator' (3#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_wr_cmd_fsm' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_wr_cmd_fsm' (4#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_aw_channel' (5#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_b_channel' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo' (6#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized0' (6#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_b_channel' (7#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_ar_channel' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_rd_cmd_fsm' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_rd_cmd_fsm' (8#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_ar_channel' (9#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_r_channel' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized1' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized1' (9#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized2' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized2' (9#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s_r_channel' (10#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' (11#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized0' (11#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized1' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized1' (11#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized2' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized2' (11#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (12#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (13#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice__parameterized0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized3' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized3' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized4' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized4' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized5' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized5' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized6' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized6' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice__parameterized0' (14#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s' (15#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_axi_protocol_converter' (16#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_pc_0' (17#1) [/home/jfonda/Documents/EE324/LED_Controller/LED_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_0/synth/system_auto_pc_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1392.277 ; gain = 206.527 ; free physical = 861 ; free virtual = 5755
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1392.277 ; gain = 206.527 ; free physical = 865 ; free virtual = 5759
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1645.301 ; gain = 0.000 ; free physical = 565 ; free virtual = 5459
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:23 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 703 ; free virtual = 5597
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:23 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 703 ; free virtual = 5597
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:23 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 704 ; free virtual = 5598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:23 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 696 ; free virtual = 5590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:25 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 670 ; free virtual = 5564
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:34 . Memory (MB): peak = 1645.301 ; gain = 459.551 ; free physical = 542 ; free virtual = 5436
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:35 . Memory (MB): peak = 1669.371 ; gain = 483.621 ; free physical = 511 ; free virtual = 5405
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 512 ; free virtual = 5406
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |     6|
+|3     |LUT2    |    19|
+|4     |LUT3    |   243|
+|5     |LUT4    |    47|
+|6     |LUT5    |    66|
+|7     |LUT6    |   104|
+|8     |SRL16E  |    18|
+|9     |SRLC32E |    47|
+|10    |FDRE    |   552|
+|11    |FDSE    |    49|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:37 . Memory (MB): peak = 1677.379 ; gain = 491.629 ; free physical = 513 ; free virtual = 5407
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:38 . Memory (MB): peak = 1677.387 ; gain = 510.738 ; free physical = 579 ; free virtual = 5473
