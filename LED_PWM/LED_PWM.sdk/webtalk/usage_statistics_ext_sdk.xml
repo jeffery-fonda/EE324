@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Sep 27 12:31:35 2017'>
+<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Oct 27 21:10:12 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="false" description="" />
-  <keyValuePair key="build_version" value="2017.2" description="" />
-  <keyValuePair key="date_generated" value="2017-09-27 12:31:32" description="" />
+  <keyValuePair key="build_version" value="2017.3" description="" />
+  <keyValuePair key="date_generated" value="2017-10-27 21:10:11" description="" />
   <keyValuePair key="os_platform" value="amd64" description="" />
-  <keyValuePair key="product_version" value="SDK v2017.2" description="" />
-  <keyValuePair key="project_id" value="2017.2_2" description="" />
-  <keyValuePair key="project_iteration" value="2" description="" />
-  <keyValuePair key="random_id" value="b4ptsh5sbuejok2hiiqba78acg" description="" />
-  <keyValuePair key="registration_id" value="211082205_0_0_269" description="" />
+  <keyValuePair key="product_version" value="SDK v2017.3" description="" />
+  <keyValuePair key="project_id" value="2017.3_6" description="" />
+  <keyValuePair key="project_iteration" value="6" description="" />
+  <keyValuePair key="random_id" value="6p9hdieh5t8m4b9n9sv2pfqfc6" description="" />
+  <keyValuePair key="registration_id" value="6p9hdieh5t8m4b9n9sv2pfqfc6" description="" />
   <keyValuePair key="route_design" value="NA" description="" />
   <keyValuePair key="target_device" value="NA" description="" />
   <keyValuePair key="target_family" value="NA" description="" />
@@ -20,24 +20,24 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2494 MHz" description="" />
-  <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
-  <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="8.000 GB" description="" />
-  <keyValuePair key="total_processors" value="1" description="" />
+  <keyValuePair key="cpu_speed" value="2494.210 MHz" description="" />
+  <keyValuePair key="os_name" value="Ubuntu" description="" />
+  <keyValuePair key="os_release" value="Ubuntu 16.04.3 LTS" description="" />
+  <keyValuePair key="system_ram" value="8.350 GB" description="" />
+  <keyValuePair key="total_processors" value="2" description="" />
  </section>
  <section name="sdk" level="1" order="3" description="">
-  <section name="bsp/1506540692185" level="2" order="1" description="">
+  <section name="bsp/1509163811419" level="2" order="1" description="">
    <keyValuePair key="bootgencount" value="0" description="" />
    <keyValuePair key="crosstriggcount" value="0" description="" />
-   <keyValuePair key="debugcount" value="0" description="" />
+   <keyValuePair key="debugcount" value="1" description="" />
    <keyValuePair key="flashcount" value="0" description="" />
    <keyValuePair key="perfcount" value="0" description="" />
    <keyValuePair key="qemudebugcount" value="0" description="" />
    <keyValuePair key="recordtype" value="ToolUsage" description="" />
    <keyValuePair key="uid" value="NA" description="" />
   </section>
-  <section name="hardware/1506540425387" level="2" order="2" description="">
+  <section name="hardware/1509160817000" level="2" order="2" description="">
    <keyValuePair key="apptemplate" value="NA" description="" />
    <keyValuePair key="arch" value="zynq" description="" />
    <keyValuePair key="device" value="7z010" description="" />
@@ -47,8 +47,8 @@
    <keyValuePair key="os" value="NA" description="" />
    <keyValuePair key="processors" value="2" description="" />
    <keyValuePair key="recordtype" value="HWCreation" description="" />
-   <keyValuePair key="uid" value="1506540425387" description="" />
-   <keyValuePair key="vivadoversion" value="2017.2" description="" />
+   <keyValuePair key="uid" value="1509160817000" description="" />
+   <keyValuePair key="vivadoversion" value="2017.3" description="" />
   </section>
  </section>
  <section name="vivado_usage" level="1" order="4" description="">

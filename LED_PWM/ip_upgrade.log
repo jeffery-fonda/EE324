@@ -1,0 +1,235 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 21:44:48 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_myPWM_0_0 (user.org:user:myPWM:1.0 (Rev. 8)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 21:34:01 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myPWM_0_0 (user.org:user:myPWM:1.0) from (Rev. 6) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 21:31:15 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_myPWM_0_0 (user.org:user:myPWM:1.0 (Rev. 6)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 21:11:05 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_myPWM_0_0 (user.org:user:myPWM:1.0) from (Rev. 4) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_myPWM_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_araddr' width 5 differs from original width 4
+
+-Upgraded port 's_axi_awaddr' width 5 differs from original width 4
+
+-Upgrade has added port 'PWM1'
+
+-Upgrade has added port 'PWM2'
+
+-Upgrade has added port 'PWM3'
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_S_AXI_ADDR_WIDTH' from '5' to '4' has been ignored for IP 'system_myPWM_0_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:myPWM:1.0 -user_name system_myPWM_0_0
+set_property -dict "\
+  CONFIG.C_S_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_S_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_S_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {system_myPWM_0_0} \
+  CONFIG.PWM_COUNTER_MAX {1024} \
+  CONFIG.S_AXI.ADDR_WIDTH {4} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {system_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {100000000} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {1} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_READ_THREADS {4} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {4} \
+  CONFIG.S_AXI.PHASE {0.000} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S_AXI.WIZ_NUM_REG {4} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.S_AXI_CLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.S_AXI_CLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.S_AXI_CLK.CLK_DOMAIN {system_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.S_AXI_CLK.PHASE {0.000} \
+  CONFIG.S_AXI_RST.POLARITY {ACTIVE_LOW} " [get_ips system_myPWM_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 20:14:59 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_myPWM_0_0 (user.org:user:myPWM:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_myPWM_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'PWM1'
+
+-Upgrade has removed port 'PWM2'
+
+-Upgrade has removed port 'PWM3'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Oct 27 18:57:30 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myPWM_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_myPWM_0_0 (user.org:user:myPWM:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_myPWM_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'PWM0'
+
+-Upgrade has added port 'PWM1'
+
+-Upgrade has added port 'PWM2'
+
+-Upgrade has added port 'PWM3'
+
+

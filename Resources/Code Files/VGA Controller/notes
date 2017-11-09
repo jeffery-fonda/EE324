@@ -1,0 +1,19 @@
+Clock Wizard:
+
+- will need to modify phase
+- input frequency as 100Mhz
+- no buffer
+- make sure dynamic reconfig is enabled
+
+VGA IP System
+
+- hdmi_EN will lead to another block
+- make sure there are VS and HS outputs
+- made sure VGA worked at 480p
+- pixel clock comes from clock wizard
+- used 6 slv_regs, might need more, maybe 10
+
+To reuse IP:
+
+- go to IP settings
+- add IP to local repository
