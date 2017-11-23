@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov 16 16:11:57 2017
+# Process ID: 14311
+# Current directory: /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/synth_1
+# Command line: vivado -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/synth_1/system_wrapper.vds
+# Journal file: /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

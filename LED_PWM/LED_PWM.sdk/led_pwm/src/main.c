@@ -6,9 +6,7 @@
 
 //Macro that stores the base address of your controller
 //This value is found in the Address editor tab in Vivado (next to Diagram tab)
-#define MY_PWM_BASEADDR 0x43C00000
-#define CHANNEL 0x43C00010
-
+#define MYPWM_BASEADDR 0x43C00000
 
 void PWM_Enable(u32 baseAddr, u32 channel)
 {
@@ -18,8 +16,7 @@ void PWM_Enable(u32 baseAddr, u32 channel)
 void PWM_Disable(u32 baseAddr, u32 channel)
 {
     // Disable PWM Controller
-	*((u32 *) baseAddr) = channel;
-
+	*((u32 *) baseAddr + channel) = 0;
 }
 
 void PWM_SetValue(u32 baseAddr, u32 channel, u32 pwmValue)
@@ -44,19 +41,17 @@ void main()
         k = 0;
         for(k = 0; k < 4; k++)
         {
-            PWM_Enable(CHANNEL, k);
-            while(1)
-            {
-                if (j > 0x3FFUL)
-                {
+            PWM_Enable(MYPWM_BASEADDR, k);
+            while(1) {
+                if (j > 0x3FFUL) {
                     j = 0;
                     break;
                 }
-                PWM_SetValue(MY_PWM_BASEADDR, k, j);
+                PWM_SetValue(MYPWM_BASEADDR, k, j);
                 msleep(10);
-                j = j + 0xC0;
+                j = j + 0x20;
             }
-            PWM_Disable(CHANNEL, k);
+            PWM_Disable(MYPWM_BASEADDR, k);
         }
     }
 }
