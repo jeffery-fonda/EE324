@@ -9,4 +9,6 @@ Lab 3:  AXI4 & Switch Controller
 Lab 4:  LED PWM  
 Lab 5:  VGA Controller  
 Lab 6:  Char Display  
-Lab 7:  Stopwatch in VHDL
+Lab 7:  Stopwatch in VHDL  
+
+Known issues: sometimes the IP can be iffy, just need to add the repositories back into the project. Can be fixed by going to project settings > IP > Repository and adding the location of the repositories.
