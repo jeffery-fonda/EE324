@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# 
+# Start of session at: Thu Nov 30 16:08:32 2017
+# Process ID: 14567
+# Current directory: /home/jfonda/Documents/EE324/Char_Display/Char_Display.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/jfonda/Documents/EE324/Char_Display/Char_Display.sdk/webtalk/webtalk.log
+# Journal file: /home/jfonda/Documents/EE324/Char_Display/Char_Display.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

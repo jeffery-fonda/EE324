@@ -31,10 +31,22 @@ void set_resolution_480p()
 	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
 	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
 
-	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 800);
-	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 525);
-	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 96);
-	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 2);
+	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 800); // total horizontal time
+	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 525); // total vertical time
+	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 96); // horizontal sync time
+	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 2); // vertical sync time
+}
+
+void set_resolution_720p()
+{
+	set_custom_ip_register(CLK_WIZ, 0x208, 0x0001810F);
+	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
+	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
+
+	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 1650);
+	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 750);
+	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 40);
+	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 5);
 }
 
 void set_resolution_768p()
@@ -66,10 +78,17 @@ int main (void)
 	volatile int i = 0;
 
 	set_resolution_480p();
-	set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
-	set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
+	set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0x445566);
+	set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0x445566);
 	for (i - 0; i < 1000000000; i++);
-
+	//set_resolution_768p();
+	//set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
+	//set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0xFFFFFF);
+	//for (i - 0; i < 1000000000; i++);
+	//set_resolution_720p();
+	//set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0x3211FA);
+	//set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0x3211FA);
+	//for (i - 0; i < 1000000; i++);
 }
 
 

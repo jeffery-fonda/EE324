@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-//Date        : Thu Nov 16 15:43:19 2017
+//Date        : Fri Dec  1 10:04:07 2017
 //Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 //Command     : generate_target system.bd
 //Design      : system
@@ -375,7 +375,7 @@ module s00_couplers_imp_11SE3QO
         .s_axi_wready(s00_couplers_to_auto_cc_WREADY),
         .s_axi_wstrb(s00_couplers_to_auto_cc_WSTRB),
         .s_axi_wvalid(s00_couplers_to_auto_cc_WVALID));
-  system_auto_pc_1 auto_pc
+  system_auto_pc_0 auto_pc
        (.aclk(M_ACLK_1),
         .aresetn(M_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),

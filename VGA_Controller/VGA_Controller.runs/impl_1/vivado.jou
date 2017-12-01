@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Nov 16 16:13:38 2017
-# Process ID: 14435
+# Start of session at: Thu Nov 30 16:17:58 2017
+# Process ID: 16686
 # Current directory: /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/impl_1
 # Command line: vivado -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
 # Log file: /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/impl_1/system_wrapper.vdi

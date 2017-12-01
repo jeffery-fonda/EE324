@@ -513,7 +513,6 @@
     assign vga_b = (colorwire == 1) ? slv_reg0[15:0] : 8'd0;
     assign vga_g = (colorwire == 1) ? slv_reg1[7:0] : 8'd0;
     assign HDMI_EN = (colorwire == 1) ? 1'b1 : 1'b0;
-    
 	// User logic ends
 
 	endmodule

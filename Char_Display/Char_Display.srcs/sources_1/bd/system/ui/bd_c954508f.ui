@@ -1,0 +1,42 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port VS -pg 1 -y 500 -defaultsOSRD
+preplace port DDR -pg 1 -y 330 -defaultsOSRD
+preplace port HS -pg 1 -y 480 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 350 -defaultsOSRD
+preplace portBus vga_b -pg 1 -y 420 -defaultsOSRD
+preplace portBus vga_r -pg 1 -y 400 -defaultsOSRD
+preplace portBus vga_g -pg 1 -y 440 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst myVGA_0 -pg 1 -lvl 5 -y 450 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y 370 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 3 3 NJ 330 NJ 330 NJ
+preplace netloc clk_wiz_0_locked 1 2 1 N
+preplace netloc myVGA_0_HS 1 5 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1040
+preplace netloc myVGA_0_vga_b 1 5 1 NJ
+preplace netloc ACLK_1 1 0 4 30 100 390 60 610 210 1070
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 1060 90 1350J
+preplace netloc myVGA_0_vga_r 1 5 1 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 3 410 190 NJ 190 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ 350 NJ 350 NJ
+preplace netloc myVGA_0_VS 1 5 1 NJ
+preplace netloc myVGA_0_vga_g 1 5 1 NJ
+preplace netloc clk_wiz_0_clk_out1 1 2 3 630 180 1050 80 1370
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 400 230 NJ 230 NJ
+preplace netloc Net 1 0 4 20 50 NJ 50 620 200 1030
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1360
+levelinfo -pg 1 0 210 510 830 1210 1490 1630 -top 0 -bot 550
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_board_cnt: "8",
+   da_clkrst_cnt: "5",
+   da_ps7_cnt: "2",
+}

@@ -46,7 +46,7 @@ set_property used_in_implementation false [get_files -all /home/jfonda/Documents
 set_property used_in_synthesis false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/system_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -17,9 +17,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14317 
+INFO: Helper process launched with PID 16574 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.477 ; gain = 93.996 ; free physical = 1791 ; free virtual = 8757
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.473 ; gain = 93.996 ; free physical = 1207 ; free virtual = 7678
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'system' [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/synth/system.v:441]
@@ -381,7 +381,7 @@ INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/opt/Xilinx/Vi
 INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_gray' (26#1) [/opt/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:300]
 INFO: [Synth 8-256] done synthesizing module 'axi_clock_converter_v2_1_13_axi_clock_converter' (41#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/7d05/hdl/axi_clock_converter_v2_1_vl_rfs.v:650]
 INFO: [Synth 8-256] done synthesizing module 'system_auto_cc_0' (42#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_cc_0/synth/system_auto_cc_0.v:58]
-INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_1/synth/system_auto_pc_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_0/synth/system_auto_pc_0.v:58]
 INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_14_axi_protocol_converter' [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
@@ -1116,7 +1116,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axi_reg
 WARNING: [Synth 8-350] instance 'MI_REG' of module 'axi_register_slice_v2_1_14_axi_register_slice' requires 93 connections, but only 92 given [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4650]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_b2s' (57#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_14_axi_protocol_converter' (58#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
-INFO: [Synth 8-256] done synthesizing module 'system_auto_pc_1' (59#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_1/synth/system_auto_pc_1.v:58]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_pc_0' (59#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ip/system_auto_pc_0/synth/system_auto_pc_0.v:58]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (60#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/synth/system.v:12]
 INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (61#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/synth/system.v:768]
 INFO: [Synth 8-256] done synthesizing module 'system' (62#1) [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/synth/system.v:441]
@@ -1223,7 +1223,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_14_b2s_wrap_cmd has u
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_14_b2s_wrap_cmd has unconnected port axlen[5]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1428.008 ; gain = 234.527 ; free physical = 1777 ; free virtual = 8745
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1428.004 ; gain = 234.527 ; free physical = 1198 ; free virtual = 7669
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1233,7 +1233,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1428.008 ; gain = 234.527 ; free physical = 1785 ; free virtual = 8752
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1428.004 ; gain = 234.527 ; free physical = 1205 ; free virtual = 7676
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1342,16 +1342,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1672.781 ; gain = 0.000 ; free physical = 1456 ; free virtual = 8424
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1671.777 ; gain = 0.000 ; free physical = 933 ; free virtual = 7405
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 1672.781 ; gain = 479.301 ; free physical = 1600 ; free virtual = 8568
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 1671.777 ; gain = 478.301 ; free physical = 1028 ; free virtual = 7500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 1672.781 ; gain = 479.301 ; free physical = 1600 ; free virtual = 8568
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 1671.777 ; gain = 478.301 ; free physical = 1028 ; free virtual = 7500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1401,7 +1401,7 @@ Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_coupler
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_cc/inst/\gen_clock_conv.gen_async_conv.asyncfifo_axi /inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 1672.781 ; gain = 479.301 ; free physical = 1601 ; free virtual = 8569
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:14 . Memory (MB): peak = 1671.777 ; gain = 478.301 ; free physical = 1029 ; free virtual = 7501
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element h_counter_reg was removed.  [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/e844/hdl/myVGA_v1_0_S_AXI.v:480]
 WARNING: [Synth 8-6014] Unused sequential element v_counter_reg was removed.  [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/e844/hdl/myVGA_v1_0_S_AXI.v:496]
@@ -1483,7 +1483,7 @@ WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:10 . Memory (MB): peak = 1672.781 ; gain = 479.301 ; free physical = 1591 ; free virtual = 8559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 1671.777 ; gain = 478.301 ; free physical = 1019 ; free virtual = 7491
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1886,44 +1886,44 @@ INFO: [Synth 8-3886] merging instance 'system_i/ps7_0_axi_periph/s00_couplers/au
 INFO: [Synth 8-3886] merging instance 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_r.r_pipe/aresetn_d_reg[1]' (FDR) to 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_b.b_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3886] merging instance 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/aresetn_d_reg[0]' (FDR) to 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_b.b_pipe/aresetn_d_reg[1]' (FDR) to 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/aresetn_d_reg[1]'
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[65]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[64]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[63]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[62]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[49]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[48]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[43]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[42]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[41]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[40]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[37]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[49]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[48]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[43]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[42]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[41]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[40]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[37]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[65]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[64]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[63]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[62]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[49]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[48]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[43]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[42]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[41]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[40]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[37]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[49]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[48]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[43]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[42]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[41]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[40]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[37]) is unused and will be removed from module system_auto_pc_1.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[65]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[64]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[63]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[62]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[49]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[48]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[43]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[42]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[41]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[40]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/skid_buffer_reg[37]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[49]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[48]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[43]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[42]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[41]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[40]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg[37]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[65]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[64]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[63]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[62]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[49]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[48]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[43]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[42]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[41]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[40]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/skid_buffer_reg[37]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[49]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[48]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[43]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[42]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[41]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[40]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[37]) is unused and will be removed from module system_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1672.781 ; gain = 479.301 ; free physical = 1563 ; free virtual = 8531
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:21 . Memory (MB): peak = 1671.777 ; gain = 478.301 ; free physical = 989 ; free virtual = 7461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1954,13 +1954,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:22 . Memory (MB): peak = 1821.781 ; gain = 628.301 ; free physical = 1283 ; free virtual = 8251
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:31 . Memory (MB): peak = 1822.777 ; gain = 629.301 ; free physical = 709 ; free virtual = 7181
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:23 . Memory (MB): peak = 1839.789 ; gain = 646.309 ; free physical = 1270 ; free virtual = 8238
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:31 . Memory (MB): peak = 1840.785 ; gain = 647.309 ; free physical = 694 ; free virtual = 7166
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1989,10 +1989,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_1.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_1.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:25 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1267 ; free virtual = 8235
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 691 ; free virtual = 7164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2134,7 +2134,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:431]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:26 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:35 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 691 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2147,7 +2147,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:26 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:35 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 691 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2159,25 +2159,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 691 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 691 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 690 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 690 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2214,11 +2214,11 @@ Report Cell Usage:
 |2     |BUFG       |     3|
 |3     |CARRY4     |    50|
 |4     |LUT1       |   184|
-|5     |LUT2       |   163|
-|6     |LUT3       |   278|
-|7     |LUT4       |   197|
-|8     |LUT5       |    85|
-|9     |LUT6       |   284|
+|5     |LUT2       |   162|
+|6     |LUT3       |   277|
+|7     |LUT4       |   198|
+|8     |LUT5       |    83|
+|9     |LUT6       |   286|
 |10    |MMCME2_ADV |     1|
 |11    |MUXF7      |    32|
 |12    |PS7        |     1|
@@ -2238,13 +2238,13 @@ Report Instance Areas:
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                                       |Module                                                         |Cells |
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                                            |                                                               |  3591|
-|2     |  system_i                                                                                     |system                                                         |  3573|
+|1     |top                                                                                            |                                                               |  3590|
+|2     |  system_i                                                                                     |system                                                         |  3572|
 |3     |    clk_wiz_0                                                                                  |system_clk_wiz_0_1                                             |     4|
 |4     |      inst                                                                                     |system_clk_wiz_0_1_clk_wiz                                     |     4|
-|5     |    myVGA_0                                                                                    |system_myVGA_0_1                                               |   789|
-|6     |      inst                                                                                     |myVGA_v1_0                                                     |   789|
-|7     |        myVGA_v1_0_S_AXI_inst                                                                  |myVGA_v1_0_S_AXI                                               |   785|
+|5     |    myVGA_0                                                                                    |system_myVGA_0_1                                               |   788|
+|6     |      inst                                                                                     |myVGA_v1_0                                                     |   788|
+|7     |        myVGA_v1_0_S_AXI_inst                                                                  |myVGA_v1_0_S_AXI                                               |   784|
 |8     |    proc_sys_reset_0                                                                           |system_proc_sys_reset_0_1                                      |    66|
 |9     |      U0                                                                                       |proc_sys_reset__1                                              |    66|
 |10    |        EXT_LPF                                                                                |lpf_35                                                         |    23|
@@ -2362,7 +2362,7 @@ Report Instance Areas:
 |122   |                      \ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst             |xpm_cdc_async_rst__10                                          |     2|
 |123   |                      \ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd  |xpm_cdc_single__9                                              |     5|
 |124   |                      \ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr  |xpm_cdc_single__10                                             |     5|
-|125   |        auto_pc                                                                                |system_auto_pc_1                                               |  1169|
+|125   |        auto_pc                                                                                |system_auto_pc_0                                               |  1169|
 |126   |          inst                                                                                 |axi_protocol_converter_v2_1_14_axi_protocol_converter          |  1169|
 |127   |            \gen_axilite.gen_b2s_conv.axilite_b2s                                              |axi_protocol_converter_v2_1_14_b2s                             |  1169|
 |128   |              \RD.ar_channel_0                                                                 |axi_protocol_converter_v2_1_14_b2s_ar_channel                  |   187|
@@ -2388,11 +2388,11 @@ Report Instance Areas:
 |148   |                bresp_fifo_0                                                                   |axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized0 |     7|
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.805 ; gain = 663.324 ; free physical = 1266 ; free virtual = 8234
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.809 ; gain = 665.332 ; free physical = 690 ; free virtual = 7163
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 705 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:08 . Memory (MB): peak = 1856.805 ; gain = 418.551 ; free physical = 1321 ; free virtual = 8289
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:27 . Memory (MB): peak = 1856.812 ; gain = 663.324 ; free physical = 1328 ; free virtual = 8296
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 1858.809 ; gain = 421.559 ; free physical = 746 ; free virtual = 7218
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 1858.816 ; gain = 665.332 ; free physical = 754 ; free virtual = 7226
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2407,8 +2407,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 243 Infos, 310 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:29 . Memory (MB): peak = 1856.812 ; gain = 689.160 ; free physical = 1468 ; free virtual = 8436
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:38 . Memory (MB): peak = 1858.816 ; gain = 691.168 ; free physical = 897 ; free virtual = 7370
 INFO: [Common 17-1381] The checkpoint '/home/jfonda/Documents/EE324/VGA_Controller/VGA_Controller.runs/synth_1/system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1880.816 ; gain = 0.000 ; free physical = 1466 ; free virtual = 8435
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 16 16:13:37 2017...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1882.820 ; gain = 0.000 ; free physical = 896 ; free virtual = 7370
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 16:17:57 2017...

@@ -462,24 +462,19 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>myVGA_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="myVGA" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_myVGA_0_1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>clk_wiz_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.4"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_clk_wiz_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="USE_DYN_RECONFIG">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">25.175</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_PHASE">0.0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIM_SOURCE">No_buffer</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RESET_PORT">resetn</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">36.375</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">36.125</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_PHASE">0.000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RESET_TYPE">ACTIVE_LOW</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">319.783</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">246.739</spirit:configurableElementValue>
@@ -494,6 +489,13 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_ps7_0_axi_periph_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>myVGA_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="myVGA" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_myVGA_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -524,19 +526,19 @@
       <spirit:adHocConnection>
         <spirit:name>ACLK_1</spirit:name>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK0"/>
-        <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+        <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_clk_out1</spirit:name>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_1" spirit:portRef="slowest_sync_clk"/>
-        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="pix_clk"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="pix_clk"/>
+        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="s_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_locked</spirit:name>
@@ -546,8 +548,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_1_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_1" spirit:portRef="peripheral_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="myVGA_0" spirit:portRef="s_axi_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>myVGA_0_vga_r</spirit:name>
@@ -577,8 +579,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="resetn"/>
+        <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -1047,7 +1049,7 @@
         <spirit:instanceName>auto_pc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_protocol_converter" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_auto_pc_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_auto_pc_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SI_PROTOCOL">AXI3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MI_PROTOCOL">AXI4LITE</spirit:configurableElementValue>
         </spirit:configurableElementValues>

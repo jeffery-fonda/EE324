@@ -1,6 +1,69 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Fri Dec  1 10:04:02 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_myVGA_0_1 (user.org:user:myVGA:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Thu Nov 30 13:53:59 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_myVGA_0_1 (user.org:user:myVGA:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Thu Nov 30 13:44:53 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_myVGA_0_1 (user.org:user:myVGA:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
 | Date         : Thu Nov 16 13:54:14 2017
 | Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 | Command      : upgrade_ip

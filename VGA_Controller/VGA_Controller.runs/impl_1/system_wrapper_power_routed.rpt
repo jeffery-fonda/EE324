@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date             : Thu Nov 16 16:14:52 2017
+| Date             : Thu Nov 30 16:19:17 2017
 | Host             : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 1.804        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.678        |
+| Dynamic (W)              | 1.679        |
 | Device Static (W)        | 0.126        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 64.2         |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        5 |       --- |             --- |
+| Clocks                   |     0.005 |        5 |       --- |             --- |
 | Slice Logic              |     0.001 |     3387 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      800 |     17600 |            4.55 |
+|   LUT as Logic           |    <0.001 |      798 |     17600 |            4.53 |
 |   LUT as Distributed RAM |    <0.001 |      128 |      6000 |            2.13 |
 |   Register               |    <0.001 |     1726 |     35200 |            4.90 |
 |   CARRY4                 |    <0.001 |       44 |      4400 |            1.00 |
 |   F7/F8 Muxes            |    <0.001 |       32 |     17600 |            0.18 |
 |   LUT as Shift Register  |    <0.001 |       61 |      6000 |            1.02 |
 |   Others                 |     0.000 |      291 |       --- |             --- |
-| Signals                  |     0.002 |     2494 |       --- |             --- |
+| Signals                  |     0.002 |     2495 |       --- |             --- |
 | MMCM                     |     0.115 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |       18 |       100 |           18.00 |
 | PS7                      |     1.556 |        1 |       --- |             --- |
@@ -154,8 +154,8 @@ Table of Contents
 +----------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                         | Power (W) |
 +----------------------------------------------------------------------------------------------+-----------+
-| system_wrapper                                                                               |     1.678 |
-|   system_i                                                                                   |     1.678 |
+| system_wrapper                                                                               |     1.679 |
+|   system_i                                                                                   |     1.679 |
 |     clk_wiz_0                                                                                |     0.115 |
 |       inst                                                                                   |     0.115 |
 |     myVGA_0                                                                                  |    <0.001 |
@@ -177,8 +177,8 @@ Table of Contents
 |           SEQ_COUNTER                                                                        |    <0.001 |
 |     processing_system7_0                                                                     |     1.556 |
 |       inst                                                                                   |     1.556 |
-|     ps7_0_axi_periph                                                                         |     0.006 |
-|       s00_couplers                                                                           |     0.006 |
+|     ps7_0_axi_periph                                                                         |     0.007 |
+|       s00_couplers                                                                           |     0.007 |
 |         auto_cc                                                                              |     0.005 |
 |           inst                                                                               |     0.005 |
 |             gen_clock_conv.gen_async_conv.asyncfifo_axi                                      |     0.005 |
@@ -236,8 +236,8 @@ Table of Contents
 |                       ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr |    <0.001 |
 |                       ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd |    <0.001 |
 |                       ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst                    |    <0.001 |
-|                 gaxi_full_lite.gwrite_ch.gwach2.axi_wach                                     |    <0.001 |
-|                   grf.rf                                                                     |    <0.001 |
+|                 gaxi_full_lite.gwrite_ch.gwach2.axi_wach                                     |     0.001 |
+|                   grf.rf                                                                     |     0.001 |
 |                     gntv_or_sync_fifo.gcx.clkx                                               |    <0.001 |
 |                       rd_pntr_cdc_inst                                                       |    <0.001 |
 |                       wr_pntr_cdc_inst                                                       |    <0.001 |

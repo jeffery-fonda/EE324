@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Thu Nov 16 16:13:37 2017
+| Date         : Thu Nov 30 16:17:57 2017
 | Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1216 |     0 |     17600 |  6.91 |
-|   LUT as Logic             |  973 |     0 |     17600 |  5.53 |
+| Slice LUTs*                | 1217 |     0 |     17600 |  6.91 |
+|   LUT as Logic             |  974 |     0 |     17600 |  5.53 |
 |   LUT as Memory            |  243 |     0 |      6000 |  4.05 |
 |     LUT as Distributed RAM |  176 |     0 |           |       |
 |     LUT as Shift Register  |   67 |     0 |           |       |
@@ -149,17 +149,17 @@ Table of Contents
 |  Ref Name  | Used |  Functional Category |
 +------------+------+----------------------+
 | FDRE       | 1756 |         Flop & Latch |
-| LUT6       |  284 |                  LUT |
-| LUT3       |  278 |                  LUT |
+| LUT6       |  286 |                  LUT |
+| LUT3       |  277 |                  LUT |
 | RAMD32     |  264 |   Distributed Memory |
-| LUT4       |  197 |                  LUT |
+| LUT4       |  198 |                  LUT |
 | LUT1       |  184 |                  LUT |
-| LUT2       |  163 |                  LUT |
+| LUT2       |  162 |                  LUT |
 | FDCE       |  130 |         Flop & Latch |
 | BIBUF      |  130 |                   IO |
 | FDPE       |  110 |         Flop & Latch |
 | RAMS32     |   88 |   Distributed Memory |
-| LUT5       |   85 |                  LUT |
+| LUT5       |   83 |                  LUT |
 | FDSE       |   58 |         Flop & Latch |
 | CARRY4     |   50 |           CarryLogic |
 | SRLC32E    |   47 |   Distributed Memory |
