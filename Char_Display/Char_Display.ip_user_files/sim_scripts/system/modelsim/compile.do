@@ -73,14 +73,14 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/system/ip/system_proc_sys_reset_1_1/sim/system_proc_sys_reset_1_1.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/d5d3/hdl/verilog" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/e0a2/hdl" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/5123" "+incdir+/opt/Xilinx/Vivado/2017.3/data/xilinx_vip/include" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/d5d3/hdl/verilog" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/e0a2/hdl" "+incdir+../../../../Char_Display.srcs/sources_1/bd/system/ipshared/5123" "+incdir+/opt/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
-"../../../bd/system/ipshared/1cdf/src/add_gen.v" \
-"../../../bd/system/ipshared/1cdf/src/color_select.v" \
-"../../../bd/system/ipshared/1cdf/src/counter.v" \
-"../../../bd/system/ipshared/1cdf/src/select.v" \
-"../../../bd/system/ipshared/1cdf/src/shifter.v" \
-"../../../bd/system/ipshared/1cdf/src/char_rom.v" \
-"../../../bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v" \
-"../../../bd/system/ipshared/1cdf/hdl/myVGA_v1_0.v" \
+"../../../bd/system/ipshared/9c19/src/add_gen.v" \
+"../../../bd/system/ipshared/9c19/src/color_select.v" \
+"../../../bd/system/ipshared/9c19/src/counter.v" \
+"../../../bd/system/ipshared/9c19/src/select.v" \
+"../../../bd/system/ipshared/9c19/src/shifter.v" \
+"../../../bd/system/ipshared/9c19/src/char_rom.v" \
+"../../../bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v" \
+"../../../bd/system/ipshared/9c19/hdl/myVGA_v1_0.v" \
 "../../../bd/system/ip/system_myVGA_0_1/sim/system_myVGA_0_1.v" \
 "../../../bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_clk_wiz.v" \
 "../../../bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.v" \

@@ -24,6 +24,7 @@
 <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.rpu" value="false"/>
 <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.system" value="false"/>
 <stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="Local"/>
+<booleanAttribute key="ignore_elfs_validation_warning" value="true"/>
 <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
 <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="false"/>
 <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>

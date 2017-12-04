@@ -1,0 +1,115 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 16, 2017
+ *      Author: jfonda
+ */
+
+#include "xparameters.h"
+#include "xil_io.h"
+#include "platform.h"
+
+#define CLK_WIZ 0x43C10000
+
+#define MY_VGA 0x43C00000 //ascii
+#define REGISTER_1_OFFSET 0x00 //loc_x
+#define REGISTER_2_OFFSET 0x04 //loc_y
+#define REGISTER_3_OFFSET 0x08 //hcounter1
+#define REGISTER_4_OFFSET 0x0C //hcounter2
+#define REGISTER_5_OFFSET 0x10 //vcounter1
+#define REGISTER_6_OFFSET 0x14 //vcounter2
+#define REGISTER_7_OFFSET 0x18 //horizontal counter const
+#define REGISTER_8_OFFSET 0x1C //vertical counter const
+#define REGISTER_9_OFFSET 0x20 //background
+#define REGISTER_10_OFFSET 0x24 //foreground
+
+#define hRes0   800
+#define vRes0   525
+#define hs0  	 96
+#define vs0 	  2
+
+#define hdmix1  144
+#define hdmix2  784
+#define hdmiy1   35
+#define hdmiy2  515
+
+void setRes(u32 thisResh, u32 thisResv, u32 hs, u32 vs, u32 hdx1, u32 hdx2, u32 hdy1, u32 hdy2);
+void set_resolution_480p();
+void set_custom_ip_register(int baseaddr, int offset, int value);
+int get_custom_ip_register(int baseaddr, int offset);
+void letter ( char alpha , u32 x, u32 y);
+void canvas1 ( u32 x1, u32 x2, u32 y1, u32 y2);
+
+void setRes(u32 thisResh, u32 thisResv, u32 hs, u32 vs, u32 hdx1, u32 hdx2, u32 hdy1, u32 hdy2)
+{
+
+	*((u32*)Hbound) = thisResh - 1;
+	*((u32*)Vbound) = thisResv - 1;
+
+	*((u32*)Hporch) = hs;
+	*((u32*)Vporch) = vs;
+	*((u32*)dispx1) = hdx1;
+	*((u32*)dispx2) = hdx2;
+	*((u32*)dispx1) = hdy1;
+	*((u32*)dispy2) = hdy2;
+
+}
+
+/*void set_resolution_480p()
+{
+	set_custom_ip_register(CLK_WIZ, 0x208, 0x0001810F);
+	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
+	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
+
+	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 800); // total horizontal time
+	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 525); // total vertical time
+	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 96); // horizontal sync time
+	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 2); // vertical sync time
+}*/
+
+void set_custom_ip_register (int baseaddr, int offset, int value)
+{
+	*((u32*)baseaddr + offset/4) = value;
+}
+
+int get_custom_ip_register (int baseaddr, int offset)
+{
+	int temp = 0;
+	temp = *((u32*)baseaddr + offset/4);
+	return temp;
+}
+
+void canvas1 ( u32 x1, u32 x2, u32 y1, u32 y2)
+{
+	*((u32*)REGISTER_3_OFFSET)  = x1+144;
+	*((u32*)REGISTER_4_OFFSET)  = x2+144;
+	*((u32*)REGISTER_5_OFFSET)  = y1+35;
+	*((u32*)REGISTER_6_OFFSET)  = y2+35;
+}
+
+void letter ( char alpha , u32 x, u32 y)
+{
+	*((u32*) MY_VGA )      = alpha;
+	*((u32*) REGISTER_1_OFFSET )       = x + 144;
+	*((u32*) REGISTER_2_OFFSET )       = y + 35;
+}
+
+int main (void)
+{
+	//set_resolution_480p();
+	//set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
+	//set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0xFFFFFF);
+
+	setRes(800, 525, 96, 2, 144, 784, 35, 515);
+
+	*((u32*)REGISTER_9_OFFSET) = 0xFFFF;
+	*((u32*)REGISTER_10_OFFSET) = 0x07E0;
+	canvas1 (160, 480, 120, 360);
+
+	while(1)
+	{
+		letter('D', 312, 232);
+	}
+}
+
+

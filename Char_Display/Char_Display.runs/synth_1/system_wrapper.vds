@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Nov 30 15:48:09 2017
-# Process ID: 11891
+# Start of session at: Mon Dec  4 14:29:39 2017
+# Process ID: 8412
 # Current directory: /home/jfonda/Documents/EE324/Char_Display/Char_Display.runs/synth_1
 # Command line: vivado -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: /home/jfonda/Documents/EE324/Char_Display/Char_Display.runs/synth_1/system_wrapper.vds
@@ -18,9 +18,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11895 
+INFO: Helper process launched with PID 8419 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.211 ; gain = 93.996 ; free physical = 2240 ; free virtual = 8687
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.207 ; gain = 93.996 ; free physical = 2348 ; free virtual = 8230
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'system' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/synth/system.v:441]
@@ -81,19 +81,19 @@ INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [/opt/Xilinx/Vivado/20
 INFO: [Synth 8-256] done synthesizing module 'system_clk_wiz_0_1_clk_wiz' (3#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_clk_wiz.v:68]
 INFO: [Synth 8-256] done synthesizing module 'system_clk_wiz_0_1' (4#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.v:70]
 INFO: [Synth 8-638] synthesizing module 'system_myVGA_0_1' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ip/system_myVGA_0_1/synth/system_myVGA_0_1.v:56]
-INFO: [Synth 8-638] synthesizing module 'myVGA_v1_0' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/hdl/myVGA_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'myVGA_v1_0' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/hdl/myVGA_v1_0.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myVGA_v1_0_S_AXI' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v:4]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myVGA_v1_0_S_AXI' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
-	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'counter' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'add_gen' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/add_gen.v:23]
-INFO: [Synth 8-256] done synthesizing module 'add_gen' (6#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/add_gen.v:23]
-INFO: [Synth 8-638] synthesizing module 'char_rom' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/char_rom.v:23]
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'add_gen' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/add_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'add_gen' (6#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/add_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'char_rom' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/char_rom.v:23]
 INFO: [Synth 8-638] synthesizing module 'BRAM_SINGLE_MACRO' [/opt/Xilinx/Vivado/2017.3/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:30]
 	Parameter BRAM_SIZE bound to: 36Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -459,21 +459,21 @@ WARNING: [Synth 8-689] width (64) of port connection 'DIADI' does not match port
 WARNING: [Synth 8-689] width (8) of port connection 'DIPADIP' does not match port width (4) of module 'RAMB36E1' [/opt/Xilinx/Vivado/2017.3/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:1814]
 WARNING: [Synth 8-689] width (8) of port connection 'WEA' does not match port width (4) of module 'RAMB36E1' [/opt/Xilinx/Vivado/2017.3/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:1826]
 INFO: [Synth 8-256] done synthesizing module 'BRAM_SINGLE_MACRO' (8#1) [/opt/Xilinx/Vivado/2017.3/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:30]
-WARNING: [Synth 8-689] width (1) of port connection 'ADDR' does not match port width (11) of module 'BRAM_SINGLE_MACRO' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/char_rom.v:217]
-WARNING: [Synth 8-3848] Net ADDR in module/entity char_rom does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/char_rom.v:217]
-INFO: [Synth 8-256] done synthesizing module 'char_rom' (9#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/char_rom.v:23]
-INFO: [Synth 8-638] synthesizing module 'shifter' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:23]
-WARNING: [Synth 8-6014] Unused sequential element twel_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:46]
-INFO: [Synth 8-256] done synthesizing module 'shifter' (10#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:23]
-INFO: [Synth 8-638] synthesizing module 'select' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/select.v:23]
-INFO: [Synth 8-256] done synthesizing module 'select' (11#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/select.v:23]
-INFO: [Synth 8-638] synthesizing module 'color_select' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/color_select.v:23]
-INFO: [Synth 8-256] done synthesizing module 'color_select' (12#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/color_select.v:23]
-WARNING: [Synth 8-3848] Net HDMI_EN in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v:21]
-WARNING: [Synth 8-3848] Net HS in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v:22]
-WARNING: [Synth 8-3848] Net VS in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v:23]
-INFO: [Synth 8-256] done synthesizing module 'myVGA_v1_0_S_AXI' (13#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/myVGA_v1_0_S_AXI.v:4]
-INFO: [Synth 8-256] done synthesizing module 'myVGA_v1_0' (14#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/hdl/myVGA_v1_0.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'ADDR' does not match port width (11) of module 'BRAM_SINGLE_MACRO' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/char_rom.v:217]
+WARNING: [Synth 8-3848] Net ADDR in module/entity char_rom does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/char_rom.v:217]
+INFO: [Synth 8-256] done synthesizing module 'char_rom' (9#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/char_rom.v:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element twel_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:46]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (10#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:23]
+INFO: [Synth 8-638] synthesizing module 'select' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/select.v:23]
+INFO: [Synth 8-256] done synthesizing module 'select' (11#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/select.v:23]
+INFO: [Synth 8-638] synthesizing module 'color_select' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/color_select.v:23]
+INFO: [Synth 8-256] done synthesizing module 'color_select' (12#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/color_select.v:23]
+WARNING: [Synth 8-3848] Net HDMI_EN in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:21]
+WARNING: [Synth 8-3848] Net HS in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:22]
+WARNING: [Synth 8-3848] Net VS in module/entity myVGA_v1_0_S_AXI does not have driver. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:23]
+INFO: [Synth 8-256] done synthesizing module 'myVGA_v1_0_S_AXI' (13#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'myVGA_v1_0' (14#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/hdl/myVGA_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'system_myVGA_0_1' (15#1) [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ip/system_myVGA_0_1/synth/system_myVGA_0_1.v:56]
 WARNING: [Synth 8-350] instance 'myVGA_0' of module 'system_myVGA_0_1' requires 28 connections, but only 27 given [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/synth/system.v:596]
 INFO: [Synth 8-638] synthesizing module 'system_proc_sys_reset_0_1' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_1/synth/system_proc_sys_reset_0_1.vhd:74]
@@ -1607,7 +1607,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_14_b2s_wrap_cmd has u
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_14_b2s_wrap_cmd has unconnected port axlen[5]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1429.742 ; gain = 236.527 ; free physical = 2230 ; free virtual = 8679
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1430.738 ; gain = 237.527 ; free physical = 2334 ; free virtual = 8217
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1616,9 +1616,9 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin BRAM_SINGLE_MACRO_inst:ADDR[0] to constant 0 [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/char_rom.v:215]
+WARNING: [Synth 8-3295] tying undriven pin BRAM_SINGLE_MACRO_inst:ADDR[0] to constant 0 [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/char_rom.v:215]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1429.742 ; gain = 236.527 ; free physical = 2236 ; free virtual = 8685
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1430.738 ; gain = 237.527 ; free physical = 2342 ; free virtual = 8225
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1727,16 +1727,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1673.516 ; gain = 0.000 ; free physical = 1946 ; free virtual = 8394
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1681.512 ; gain = 0.000 ; free physical = 2015 ; free virtual = 7898
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1673.516 ; gain = 480.301 ; free physical = 2054 ; free virtual = 8503
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 1681.512 ; gain = 488.301 ; free physical = 2162 ; free virtual = 8045
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1673.516 ; gain = 480.301 ; free physical = 2054 ; free virtual = 8503
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 1681.512 ; gain = 488.301 ; free physical = 2162 ; free virtual = 8045
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1786,16 +1786,22 @@ Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_coupler
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_cc/inst/\gen_clock_conv.gen_async_conv.asyncfifo_axi /inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 1673.516 ; gain = 480.301 ; free physical = 2055 ; free virtual = 8504
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:10 . Memory (MB): peak = 1681.512 ; gain = 488.301 ; free physical = 2162 ; free virtual = 8045
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/counter.v:37]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:38]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:39]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:38]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:39]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:38]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/shifter.v:39]
+WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/counter.v:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/shifter.v:39]
 INFO: [Synth 8-5546] ROM "gnd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'slv_reg13_reg[31:0]' into 'slv_reg15_reg[31:0]' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:256]
+INFO: [Synth 8-4471] merging register 'slv_reg16_reg[31:0]' into 'slv_reg15_reg[31:0]' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:259]
+INFO: [Synth 8-4471] merging register 'slv_reg17_reg[31:0]' into 'slv_reg15_reg[31:0]' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:260]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg13_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:256]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg16_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:259]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg17_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/myVGA_v1_0_S_AXI.v:260]
 WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
@@ -1874,7 +1880,7 @@ WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:01:10 . Memory (MB): peak = 1673.516 ; gain = 480.301 ; free physical = 2045 ; free virtual = 8493
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1681.512 ; gain = 488.301 ; free physical = 2152 ; free virtual = 8035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1904,12 +1910,13 @@ Detailed RTL Component Info :
 	               66 Bit    Registers := 4     
 	               49 Bit    Registers := 2     
 	               47 Bit    Registers := 4     
-	               32 Bit    Registers := 11    
+	               32 Bit    Registers := 16    
 	               14 Bit    Registers := 4     
 	               12 Bit    Registers := 9     
+	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
 	                8 Bit    Registers := 2     
-	                6 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 14    
 	                4 Bit    Registers := 87    
 	                3 Bit    Registers := 6     
@@ -1918,8 +1925,9 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     47 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 18    
-	  11 Input     32 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 22    
+	  19 Input     32 Bit        Muxes := 14    
+	  16 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 6     
@@ -1927,6 +1935,7 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 8     
 	   2 Input      4 Bit        Muxes := 20    
+	  19 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 27    
 	   5 Input      2 Bit        Muxes := 6     
 	   4 Input      2 Bit        Muxes := 1     
@@ -1974,13 +1983,15 @@ Detailed RTL Component Info :
 Module myVGA_v1_0_S_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 11    
-	                6 Bit    Registers := 2     
+	               32 Bit    Registers := 16    
+	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 10    
-	  11 Input     32 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 14    
+	  19 Input     32 Bit        Muxes := 14    
+	  16 Input     32 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 5     
 Module lpf 
 Detailed RTL Component Info : 
@@ -2262,22 +2273,61 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/counter.v:37]
-WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/1cdf/src/counter.v:37]
+WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/counter.v:37]
+WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/9c19/src/counter.v:37]
 INFO: [Synth 8-5546] ROM "gnd" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
 WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 WARNING: [Synth 8-6014] Unused sequential element inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_cnt_reg was removed.  [/home/jfonda/Documents/EE324/Char_Display/Char_Display.srcs/sources_1/bd/system/ipshared/33cc/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3759]
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[0]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[12]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[13]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[14]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[15]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[16]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[17]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[18]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[19]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[20]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[21]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[22]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[23]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[24]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[25]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[26]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[27]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[28]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[29]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[30]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[31]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[1]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[2]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[3]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[4]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[5]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[6]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[7]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[8]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[9]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[10]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/myVGA_0/\inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11] )
 INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/myVGA_0/\inst/myVGA_v1_0_S_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'system_i/myVGA_0/inst/myVGA_v1_0_S_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/myVGA_0/\inst/myVGA_v1_0_S_AXI_inst/axi_bresp_reg[1] )
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/VERT_COUNTER/TC_reg) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_awaddr_reg[9]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_awaddr_reg[8]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_awaddr_reg[7]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/slv_reg15_reg[11]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_araddr_reg[9]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_araddr_reg[8]) is unused and will be removed from module system_myVGA_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_araddr_reg[7]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_myVGA_0_1.
 INFO: [Synth 8-3332] Sequential element (inst/myVGA_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_myVGA_0_1.
@@ -2346,7 +2396,7 @@ INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[40]) is unused and will be removed from module system_auto_pc_0.
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/gen_simple_ar.ar_pipe/m_payload_i_reg[37]) is unused and will be removed from module system_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:15 . Memory (MB): peak = 1673.516 ; gain = 480.301 ; free physical = 2017 ; free virtual = 8466
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1681.512 ; gain = 488.301 ; free physical = 2122 ; free virtual = 8005
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2377,13 +2427,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1825.516 ; gain = 632.301 ; free physical = 1738 ; free virtual = 8187
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:27 . Memory (MB): peak = 1827.512 ; gain = 634.301 ; free physical = 1843 ; free virtual = 7726
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 1843.523 ; gain = 650.309 ; free physical = 1723 ; free virtual = 8172
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:28 . Memory (MB): peak = 1844.520 ; gain = 651.309 ; free physical = 1829 ; free virtual = 7712
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2415,7 +2465,7 @@ Start Technology Mapping
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:26 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1719 ; free virtual = 8168
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:31 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1823 ; free virtual = 7706
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2555,7 +2605,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/opt/Xilinx/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:431]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:27 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2568,7 +2618,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:27 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2580,25 +2630,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1718 ; free virtual = 8167
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2633,46 +2683,47 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BIBUF      |   130|
 |2     |BUFG       |     3|
-|3     |CARRY4     |    50|
-|4     |LUT1       |   152|
-|5     |LUT2       |   154|
-|6     |LUT3       |   277|
-|7     |LUT4       |   226|
-|8     |LUT5       |    88|
-|9     |LUT6       |   276|
+|3     |CARRY4     |    44|
+|4     |LUT1       |   172|
+|5     |LUT2       |   166|
+|6     |LUT3       |   276|
+|7     |LUT4       |   202|
+|8     |LUT5       |   200|
+|9     |LUT6       |   209|
 |10    |MMCME2_ADV |     1|
-|11    |MUXF7      |    34|
-|12    |PS7        |     1|
-|13    |RAM32M     |    44|
-|14    |RAMB36E1   |     1|
-|15    |SRL16      |     2|
-|16    |SRL16E     |    18|
-|17    |SRLC32E    |    47|
-|18    |FDCE       |   156|
-|19    |FDPE       |   114|
-|20    |FDR        |    16|
-|21    |FDRE       |  1705|
-|22    |FDSE       |    58|
-|23    |OBUF       |    16|
-|24    |OBUFT      |     2|
+|11    |MUXF7      |    66|
+|12    |MUXF8      |    33|
+|13    |PS7        |     1|
+|14    |RAM32M     |    44|
+|15    |RAMB36E1   |     1|
+|16    |SRL16      |     2|
+|17    |SRL16E     |    18|
+|18    |SRLC32E    |    47|
+|19    |FDCE       |   156|
+|20    |FDPE       |   114|
+|21    |FDR        |    16|
+|22    |FDRE       |  1835|
+|23    |FDSE       |    58|
+|24    |OBUF       |    16|
+|25    |OBUFT      |     2|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                                       |Module                                                         |Cells |
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                                            |                                                               |  3571|
-|2     |  system_i                                                                                     |system                                                         |  3553|
+|1     |top                                                                                            |                                                               |  3812|
+|2     |  system_i                                                                                     |system                                                         |  3794|
 |3     |    clk_wiz_0                                                                                  |system_clk_wiz_0_1                                             |     4|
 |4     |      inst                                                                                     |system_clk_wiz_0_1_clk_wiz                                     |     4|
-|5     |    myVGA_0                                                                                    |system_myVGA_0_1                                               |   773|
-|6     |      inst                                                                                     |myVGA_v1_0                                                     |   773|
-|7     |        myVGA_v1_0_S_AXI_inst                                                                  |myVGA_v1_0_S_AXI                                               |   769|
-|8     |          CHAR_ROM                                                                             |char_rom                                                       |     7|
-|9     |            BRAM_SINGLE_MACRO_inst                                                             |BRAM_SINGLE_MACRO                                              |     7|
-|10    |          HOR_COUNTER                                                                          |counter                                                        |    83|
-|11    |          SHIFTER                                                                              |shifter                                                        |    34|
-|12    |          VERT_COUNTER                                                                         |counter_40                                                     |    88|
+|5     |    myVGA_0                                                                                    |system_myVGA_0_1                                               |  1014|
+|6     |      inst                                                                                     |myVGA_v1_0                                                     |  1014|
+|7     |        myVGA_v1_0_S_AXI_inst                                                                  |myVGA_v1_0_S_AXI                                               |  1010|
+|8     |          CHAR_ROM                                                                             |char_rom                                                       |     8|
+|9     |            BRAM_SINGLE_MACRO_inst                                                             |BRAM_SINGLE_MACRO                                              |     8|
+|10    |          HOR_COUNTER                                                                          |counter                                                        |    82|
+|11    |          SHIFTER                                                                              |shifter                                                        |    22|
+|12    |          VERT_COUNTER                                                                         |counter_40                                                     |    84|
 |13    |    proc_sys_reset_0                                                                           |system_proc_sys_reset_0_1                                      |    66|
 |14    |      U0                                                                                       |proc_sys_reset__1                                              |    66|
 |15    |        EXT_LPF                                                                                |lpf_35                                                         |    23|
@@ -2816,13 +2867,13 @@ Report Instance Areas:
 |153   |                bresp_fifo_0                                                                   |axi_protocol_converter_v2_1_14_b2s_simple_fifo__parameterized0 |     7|
 +------+-----------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.547 ; gain = 668.332 ; free physical = 1717 ; free virtual = 8167
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1862.535 ; gain = 669.324 ; free physical = 1822 ; free virtual = 7705
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 734 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1861.547 ; gain = 424.559 ; free physical = 1774 ; free virtual = 8223
-Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 1861.555 ; gain = 668.332 ; free physical = 1781 ; free virtual = 8230
+Synthesis finished with 0 errors, 0 critical warnings and 737 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:13 . Memory (MB): peak = 1862.535 ; gain = 418.551 ; free physical = 1879 ; free virtual = 7762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:33 . Memory (MB): peak = 1862.543 ; gain = 669.324 ; free physical = 1886 ; free virtual = 7770
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2833,10 +2884,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-266 Infos, 321 Warnings, 0 Critical Warnings and 0 Errors encountered.
+308 Infos, 324 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1861.555 ; gain = 693.168 ; free physical = 1922 ; free virtual = 8371
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:34 . Memory (MB): peak = 1862.543 ; gain = 694.160 ; free physical = 2026 ; free virtual = 7910
 INFO: [Common 17-1381] The checkpoint '/home/jfonda/Documents/EE324/Char_Display/Char_Display.runs/synth_1/system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1885.559 ; gain = 0.000 ; free physical = 1923 ; free virtual = 8373
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 15:49:51 2017...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1886.547 ; gain = 0.000 ; free physical = 2025 ; free virtual = 7910
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 14:31:26 2017...

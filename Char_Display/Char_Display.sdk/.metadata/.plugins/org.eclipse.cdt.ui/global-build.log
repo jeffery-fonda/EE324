@@ -991,3 +991,526 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+13:45:52 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:66:15: warning: unused variable 'i' [-Wunused-variable]
+  volatile int i = 0;
+               ^
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19532	   1148	  22568	  43248	   a8f0	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+13:53:51 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:45:10: error: 'Hbound' undeclared (first use in this function)
+  *((u32*)Hbound) = thisResh - 1;
+          ^~~~~~
+../src/main.c:45:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:46:10: error: 'Vbound' undeclared (first use in this function)
+  *((u32*)Vbound) = thisResv - 1;
+          ^~~~~~
+../src/main.c:48:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:50:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:53:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:108:2: warning: implicit declaration of function 'canvas1' [-Wimplicit-function-declaration]
+  canvas1 ( 160, 480, 120, 360);
+  ^~~~~~~
+../src/main.c:98:15: warning: unused variable 'i' [-Wunused-variable]
+  volatile int i = 0;
+               ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+13:54:29 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:45:10: error: 'Hbound' undeclared (first use in this function)
+  *((u32*)Hbound) = thisResh - 1;
+          ^~~~~~
+../src/main.c:45:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:46:10: error: 'Vbound' undeclared (first use in this function)
+  *((u32*)Vbound) = thisResv - 1;
+          ^~~~~~
+../src/main.c:48:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:50:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:53:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:108:2: warning: implicit declaration of function 'canvas1' [-Wimplicit-function-declaration]
+  canvas1 ( 160, 480, 120, 360);
+  ^~~~~~~
+../src/main.c:98:15: warning: unused variable 'i' [-Wunused-variable]
+  volatile int i = 0;
+               ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:00:10 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:99:15: warning: unused variable 'i' [-Wunused-variable]
+  volatile int i = 0;
+               ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:02:56 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+/home/jfonda/Documents/EE324/Char_Display/Char_Display.sdk/vga_test/Debug/../src/main.c:103: undefined reference to `setRes'
+collect2: error: ld returned 1 exit status
+make: *** [vga_test.elf] Error 1
+makefile:39: recipe for target 'vga_test.elf' failed
+14:03:29 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:03:56 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+          ^~~~~~
+make: *** [src/main.o] Error 1
+14:04:28 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:49:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+14:05:14 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:46:10: error: 'Hbound' undeclared (first use in this function)
+  *((u32*)Hbound) = thisResh - 1;
+          ^~~~~~
+../src/main.c:46:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:47:10: error: 'Vbound' undeclared (first use in this function)
+  *((u32*)Vbound) = thisResv - 1;
+          ^~~~~~
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:05:15 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setRes':
+../src/main.c:46:10: error: 'Hbound' undeclared (first use in this function)
+  *((u32*)Hbound) = thisResh - 1;
+          ^~~~~~
+../src/main.c:46:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:47:10: error: 'Vbound' undeclared (first use in this function)
+  *((u32*)Vbound) = thisResv - 1;
+          ^~~~~~
+../src/main.c:49:10: error: 'Hporch' undeclared (first use in this function)
+  *((u32*)Hporch) = hs;
+          ^~~~~~
+../src/main.c:50:10: error: 'Vporch' undeclared (first use in this function)
+  *((u32*)Vporch) = vs;
+          ^~~~~~
+../src/main.c:51:10: error: 'dispx1' undeclared (first use in this function)
+  *((u32*)dispx1) = hdx1;
+          ^~~~~~
+../src/main.c:52:10: error: 'dispx2' undeclared (first use in this function)
+  *((u32*)dispx2) = hdx2;
+          ^~~~~~
+../src/main.c:54:10: error: 'dispy2' undeclared (first use in this function)
+  *((u32*)dispy2) = hdy2;
+          ^~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:06:32 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19676	   1148	  22568	  43392	   a980	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:07:06 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19676	   1148	  22568	  43392	   a980	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:07:38 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19676	   1148	  22568	  43392	   a980	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:08:10 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19684	   1148	  22568	  43400	   a988	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:36:39 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'canvas1':
+../src/main.c:67:10: error: 'REGISTER_3_OFFSET' undeclared (first use in this function)
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+  *((u32*)REGISTER_3_OFFSET)  = x1+144;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:67:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:68:10: error: 'REGISTER_4_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_4_OFFSET)  = x2+144;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:69:10: error: 'REGISTER_5_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_5_OFFSET)  = y1+35;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:70:10: error: 'REGISTER_6_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_6_OFFSET)  = y2+35;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c: In function 'letter':
+../src/main.c:75:11: error: 'MY_VGA' undeclared (first use in this function)
+  *((u32*) MY_VGA )      = alpha;
+           ^~~~~~
+../src/main.c:76:11: error: 'REGISTER_1_OFFSET' undeclared (first use in this function)
+  *((u32*) REGISTER_1_OFFSET )       = x + 144;
+           ^~~~~~~~~~~~~~~~~
+../src/main.c:77:11: error: 'REGISTER_2_OFFSET' undeclared (first use in this function)
+  *((u32*) REGISTER_2_OFFSET )       = y + 35;
+           ^~~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:84:10: error: 'REGISTER_9_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_9_OFFSET) = 0xFFFF;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:85:10: error: 'REGISTER_10_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_10_OFFSET) = 0x07E0;
+          ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:37:19 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:84:10: error: 'REGISTER_9_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_9_OFFSET) = 0xFFFF;
+          ^~~~~~~~~~~~~~~~~
+../src/main.c:84:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:10: error: 'REGISTER_10_OFFSET' undeclared (first use in this function)
+  *((u32*)REGISTER_10_OFFSET) = 0x07E0;
+          ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:37:36 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19560	   1148	  22568	  43276	   a90c	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:37:52 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:38:28 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19560	   1148	  22568	  43276	   a90c	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:38:51 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19560	   1148	  22568	  43276	   a90c	vga_test.elf
+Finished building: vga_test.elf.size
+ 
+14:38:54 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:39:20 **** Incremental Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:41:42 **** Auto Build of configuration Debug for project vga_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../vga_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: vga_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../vga_test_bsp/ps7_cortexa9_0/lib -o "vga_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vga_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size vga_test.elf  |tee "vga_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19560	   1148	  22568	  43276	   a90c	vga_test.elf
+Finished building: vga_test.elf.size
+ 

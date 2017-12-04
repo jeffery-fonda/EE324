@@ -1,6 +1,191 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 14:29:16 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myVGA_0_1 (user.org:user:myVGA:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 14:26:02 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myVGA_0_1 (user.org:user:myVGA:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 14:22:45 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myVGA_0_1 (user.org:user:myVGA:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 13:32:25 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_myVGA_0_1 (user.org:user:myVGA:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_myVGA_0_1'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_araddr' width 10 differs from original width 6
+
+-Upgraded port 's_axi_awaddr' width 10 differs from original width 6
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_S_AXI_ADDR_WIDTH' from '10' to '6' has been ignored for IP 'system_myVGA_0_1'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:myVGA:1.0 -user_name system_myVGA_0_1
+set_property -dict "\
+  CONFIG.C_S_AXI_ADDR_WIDTH {6} \
+  CONFIG.C_S_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_S_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {system_myVGA_0_1} \
+  CONFIG.S_AXI.ADDR_WIDTH {6} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {system_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {74250000} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {1} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_READ_THREADS {4} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {4} \
+  CONFIG.S_AXI.PHASE {0.5} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S_AXI.WIZ_NUM_REG {10} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.S_AXI_CLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.S_AXI_CLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.S_AXI_CLK.CLK_DOMAIN {system_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.S_AXI_CLK.FREQ_HZ {74250000} \
+  CONFIG.S_AXI_CLK.PHASE {0.5} \
+  CONFIG.S_AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.pix_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.pix_clk.ASSOCIATED_RESET {} \
+  CONFIG.pix_clk.CLK_DOMAIN {system_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.pix_clk.FREQ_HZ {74250000} \
+  CONFIG.pix_clk.PHASE {0.5} " [get_ips system_myVGA_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 13:20:07 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myVGA_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myVGA_0_1 (user.org:user:myVGA:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
 | Date         : Thu Nov 30 15:47:41 2017
 | Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 | Command      : upgrade_ip

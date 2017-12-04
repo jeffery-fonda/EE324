@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-//Date        : Thu Nov 30 15:47:46 2017
+//Date        : Mon Dec  4 14:29:21 2017
 //Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 //Command     : generate_target system.bd
 //Design      : system
@@ -598,12 +598,12 @@ module system
         .VS(myVGA_0_VS),
         .pix_clk(clk_wiz_0_clk_out1),
         .s_axi_aclk(clk_wiz_0_clk_out1),
-        .s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[5:0]),
+        .s_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[9:0]),
         .s_axi_aresetn(proc_sys_reset_1_peripheral_aresetn),
         .s_axi_arprot(ps7_0_axi_periph_M00_AXI_ARPROT),
         .s_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
         .s_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[5:0]),
+        .s_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[9:0]),
         .s_axi_awprot(ps7_0_axi_periph_M00_AXI_AWPROT),
         .s_axi_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
         .s_axi_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),

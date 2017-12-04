@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Thu Nov 30 15:50:54 2017
+| Date         : Mon Dec  4 14:32:29 2017
 | Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 | Command      : report_control_sets -file system_wrapper_control_sets_placed.rpt
 | Design       : system_wrapper
@@ -21,7 +21,7 @@ Table of Contents
 +-------------------------------+-------+
 |             Status            | Count |
 +-------------------------------+-------+
-| Number of unique control sets |   123 |
+| Number of unique control sets |   139 |
 +-------------------------------+-------+
 
 
@@ -31,12 +31,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             382 |          101 |
-| No           | No                    | Yes                    |             154 |           52 |
-| No           | Yes                   | No                     |              79 |           28 |
-| Yes          | No                    | No                     |             602 |          154 |
-| Yes          | No                    | Yes                    |             116 |           26 |
-| Yes          | Yes                   | No                     |             388 |          114 |
+| No           | No                    | No                     |             382 |          102 |
+| No           | No                    | Yes                    |             154 |           53 |
+| No           | Yes                   | No                     |              79 |           30 |
+| Yes          | No                    | No                     |             602 |          145 |
+| Yes          | No                    | Yes                    |             116 |           25 |
+| Yes          | Yes                   | No                     |             518 |          186 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 

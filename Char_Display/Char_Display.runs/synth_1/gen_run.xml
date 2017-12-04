@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1512085688">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1512426577">
   <File Type="VDS-TIMING-PB" Name="system_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="system_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
@@ -48,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -9,100 +9,82 @@
 #include "xil_io.h"
 #include "platform.h"
 
-#define MY_VGA 0x43C00000
 #define CLK_WIZ 0x43C10000
 
-#define REGISTER_1_OFFSET 0x00
-#define REGISTER_2_OFFSET 0x04
-#define REGISTER_3_OFFSET 0x08
-#define REGISTER_4_OFFSET 0x0C
-#define REGISTER_5_OFFSET 0x10
-#define REGISTER_6_OFFSET 0x14
-#define REGISTER_7_OFFSET 0x18
-#define REGISTER_8_OFFSET 0x1C
-#define REGISTER_9_OFFSET 0x20
+#define R_ADDR      0x43C10000 //slvreg0
+#define G_ADDR      0x43C10004 //slvreg1, background
+#define B_ADDR      0x43C10008 //slvreg2, foreground
+#define H1_ADDR     0x43C1000C //slvreg3, hcount1
+#define H2_ADDR     0x43C10010 //slvreg4, hcount2
+#define V1_ADDR     0x43C10014 //slvreg5, vcount1
+#define V2_ADDR     0x43C10018 //slvreg6, vcount2
+#define Hbound      0x43C1001C //slvreg7, const for horizontal counter
+#define Vbound      0x43C10020 //slvreg8, const for vertical counter
+#define Hporch      0x43C10024 //slvreg9
+#define Vporch      0x43C10028 //slvreg10
+#define dispx1		0x43C1002C //slvreg11
+#define dispx2		0x43C10030 //slvreg12
+#define dispy1		0x43C10034 //slvreg13
+#define dispy2		0x43C10038 //slvreg14
+#define ascii       0x43C1003C //slvreg15, ascii
+#define locx        0x43C10040 //slvreg16, loc_x
+#define locy        0x43C10044 //slvreg17, loc_y
 
-void set_resolution_480p();
-void set_resolution_720p();
-void set_resolution_768p();
-void set_custom_ip_register(int baseaddr, int offset, int value);
-int get_custom_ip_register(int baseaddr, int offset);
+#define hRes0   800
+#define vRes0   525
+#define hs0  	 96
+#define vs0 	  2
 
-void set_resolution_480p()
+#define hdmix1  144
+#define hdmix2  784
+#define hdmiy1   35
+#define hdmiy2  515
+
+void setRes(u32 thisResh, u32 thisResv, u32 hs, u32 vs, u32 hdx1, u32 hdx2, u32 hdy1, u32 hdy2);
+void letter ( char alpha , u32 x, u32 y);
+void canvas1 ( u32 x1, u32 x2, u32 y1, u32 y2);
+
+void setRes(u32 thisResh, u32 thisResv, u32 hs, u32 vs, u32 hdx1, u32 hdx2, u32 hdy1, u32 hdy2)
 {
-	set_custom_ip_register(CLK_WIZ, 0x208, 0x0001810F);
-	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
-	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
 
-	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 800); // total horizontal time
-	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 525); // total vertical time
-	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 96); // horizontal sync time
-	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 2); // vertical sync time
+	*((u32*)Hbound) = thisResh - 1;
+	*((u32*)Vbound) = thisResv - 1;
+
+	*((u32*)Hporch) = hs;
+	*((u32*)Vporch) = vs;
+	*((u32*)dispx1) = hdx1;
+	*((u32*)dispx2) = hdx2;
+	*((u32*)dispx1) = hdy1;
+	*((u32*)dispy2) = hdy2;
+
 }
 
-void set_resolution_720p()
+void canvas1 ( u32 x1, u32 x2, u32 y1, u32 y2)
 {
-	set_custom_ip_register(CLK_WIZ, 0x208, 0x0001810F);
-	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
-	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
-
-	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 1650);
-	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 750);
-	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 40);
-	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 5);
-}
-
-void set_resolution_768p()
-{
-	set_custom_ip_register(CLK_WIZ, 0x208, 0x0001810F);
-	set_custom_ip_register(CLK_WIZ, 0x214, 0x00004D03);
-	set_custom_ip_register(CLK_WIZ, 0x25c, 0x00000003);
-
-	set_custom_ip_register(MY_VGA, REGISTER_3_OFFSET, 1344);
-	set_custom_ip_register(MY_VGA, REGISTER_4_OFFSET, 806);
-	set_custom_ip_register(MY_VGA, REGISTER_5_OFFSET, 136);
-	set_custom_ip_register(MY_VGA, REGISTER_6_OFFSET, 6);
-}
-
-void set_custom_ip_register (int baseaddr, int offset, int value)
-{
-	*((u32*)baseaddr + offset/4) = value;
-}
-
-int get_custom_ip_register (int baseaddr, int offset)
-{
-	int temp = 0;
-	temp = *((u32*)baseaddr + offset/4);
-	return temp;
+	*((u32*)H1_ADDR)  = x1+144;
+	*((u32*)H2_ADDR)  = x2+144;
+	*((u32*)V1_ADDR)  = y1+35;
+	*((u32*)V2_ADDR)  = y2+35;
 }
 
 void letter ( char alpha , u32 x, u32 y)
 {
-	*((u32*) MY_VGA )      = alpha;
-	*((u32*) REGISTER_1_OFFSET )       = x + 144;
-	*((u32*) REGISTER_2_OFFSET )       = y + 35;
+	*((u32*)ascii)      = alpha;
+	*((u32*)locx)       = x+144;
+	*((u32*)locy)       = y+35;
 }
 
 int main (void)
 {
-	volatile int i = 0;
+	setRes(hRes0, vRes0, hs0, vs0, hdmix1, hdmix2, hdmiy1, hdmiy2);
 
-	//set_resolution_480p();
-	//set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
-	//set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0xFFFFFF);
-	//for (i - 0; i < 1000000000; i++);
-	//set_resolution_768p();
-	//set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
-	//set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0xFFFFFF);
-	//for (i - 0; i < 1000000000; i++);
-	set_resolution_720p();
-	set_custom_ip_register(MY_VGA, REGISTER_1_OFFSET, 0xFFFFFF);
-	set_custom_ip_register(MY_VGA, REGISTER_2_OFFSET, 0xFFFFFF);
-	for (i - 0; i < 1000000; i++);
+	*((u32*)0x43C10004) = 0xFFFF; //background
+	*((u32*)0x43C10008) = 0x07E0; //foreground
+	canvas1 (160, 480, 120, 360);
 
 	while(1)
 	{
-		letter('J', 312, 232);
+		letter('D', 312, 232);
 	}
 }
 
