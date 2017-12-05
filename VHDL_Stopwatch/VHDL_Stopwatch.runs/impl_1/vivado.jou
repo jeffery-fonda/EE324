@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Dec  4 16:25:17 2017
+# Process ID: 2614
+# Current directory: /home/jfonda/Documents/EE324/VHDL_Stopwatch/VHDL_Stopwatch.runs/impl_1
+# Command line: vivado -log stopwatch.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source stopwatch.tcl -notrace
+# Log file: /home/jfonda/Documents/EE324/VHDL_Stopwatch/VHDL_Stopwatch.runs/impl_1/stopwatch.vdi
+# Journal file: /home/jfonda/Documents/EE324/VHDL_Stopwatch/VHDL_Stopwatch.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace

@@ -40,10 +40,10 @@ read_xdc /home/jfonda/Documents/EE324/VHDL_Stopwatch/VHDL_Stopwatch.srcs/constrs
 set_property used_in_implementation false [get_files /home/jfonda/Documents/EE324/VHDL_Stopwatch/VHDL_Stopwatch.srcs/constrs_1/new/constraints.xdc]
 
 
-synth_design -top Stopwatch -part xc7a35tcpg236-1
+synth_design -top stopwatch -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Stopwatch.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Stopwatch_utilization_synth.rpt -pb Stopwatch_utilization_synth.pb"
+write_checkpoint -force -noxdef stopwatch.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file stopwatch_utilization_synth.rpt -pb Stopwatch_utilization_synth.pb"

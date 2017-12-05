@@ -6,4 +6,4 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log Stopwatch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Stopwatch.tcl
+vivado -log stopwatch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch.tcl

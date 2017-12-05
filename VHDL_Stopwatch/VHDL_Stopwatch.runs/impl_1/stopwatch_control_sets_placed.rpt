@@ -1,0 +1,42 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Mon Dec  4 16:26:04 2017
+| Host         : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_control_sets -file stopwatch_control_sets_placed.rpt
+| Design       : stopwatch
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+
+1. Summary
+----------
+
++-------------------------------+-------+
+|             Status            | Count |
++-------------------------------+-------+
+| Number of unique control sets |    10 |
++-------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              63 |           16 |
+| Yes          | No                    | No                     |              32 |            8 |
+| Yes          | No                    | Yes                    |             160 |           51 |
+| Yes          | Yes                   | No                     |               8 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
